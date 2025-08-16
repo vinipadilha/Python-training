@@ -1,4 +1,4 @@
-friends = ["Alice", "Bob", "Charlie"]
+friends = ["Alice", "Bob", "Charlie", "George"]
 
 for friend in friends:
     print(friends)
