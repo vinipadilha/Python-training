@@ -9,3 +9,12 @@ questions = [
     Question(question_prompts[0], "c"),
     Question(question_prompts[1], "b")  
 ]
+
+
+
+def run_test(questions):
+    score = 0
+    for question in questions: 
+        answer = input(question.prompt)
+        if answer.lower() == question.answer:
+            score += 1
