@@ -5,9 +5,9 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello, World 1!'
 
-@app.route("/about")
-def about_page():
-    return 'About Page'
+@app.route("/about/<username>")
+def about_page(username):   
+    return f'About {username}'
 
 
 if __name__ == "__main__":
