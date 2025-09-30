@@ -10,7 +10,7 @@ def home_page():
 
 @app.route("/market")
 def market_page():
-    return render_template("market.html")
+    return render_template("market.html", item_name="Phone")
 
 if __name__ == "__main__":
     app.run(debug=True, port=5001)
