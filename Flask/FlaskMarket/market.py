@@ -6,6 +6,9 @@ app = Flask(__name__)
 
 db = SQLAlchemy(app)
 
+class Item (db.Model):
+    name = db.Column(db.String(length=30), primary_key=True)
+
 @app.route("/")
 @app.route("/home")
 def home_page():
