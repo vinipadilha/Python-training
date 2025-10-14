@@ -1,4 +1,4 @@
-
+from market import db
 
 class Item(db.Model):
     __tablename__ = 'item'
@@ -11,5 +11,3 @@ class Item(db.Model):
     def __repr__(self):
         return f'<Item {self.name}>'
 
-with app.app_context():
-    db.create_all()
